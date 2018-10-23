@@ -10,7 +10,7 @@ class Config(object):
     LOG_FILE = 'movies.log'
     JWT_ALGORITHM ='HS256'
     JWT_AUTH_URL_RULE = '/auth'
-    JWT_EXPIRATION_DELTA = timedelta(seconds=3000)
+    JWT_EXPIRATION_DELTA = timedelta(seconds=300) #5 mins
 
 
 class DevelopmentConfig(Config):

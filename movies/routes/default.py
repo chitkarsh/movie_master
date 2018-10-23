@@ -6,6 +6,12 @@ from movies.core.commons import jsonify
 logger = get_logger()
 mod = Blueprint('default', __name__)
 
+
+@mod.route('/', methods=['GET'])
+def landing_endpoint():
+    response = jsonify({'message':'Welcome to the Application. This is an endpoint for sanity test. The app is up and running.' })
+    return response
+
 @mod.app_errorhandler(403)
 def error_403(e):
     logger.error('{}'.format(e))
