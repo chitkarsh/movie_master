@@ -1,0 +1,10 @@
+"""
+    This is a deployment specific file. It is designed to not be committed, as it may contain sensitive data. 
+    http://flask.pocoo.org/docs/0.12/config/#instance-folders
+"""
+import binascii, os
+SECRET_KEY = binascii.hexlify(os.urandom(24))
+SQLALCHEMY_DATABASE_URI = 'mysql://<user>:<password>@localhost/<db_name>'
+# JWT_SECRET_KEY = binascii.hexlify(os.urandom(24))
+JWT_AUTH_USERNAME_KEY ='username'
+JWT_AUTH_PASSWORD_KEY ='password'
