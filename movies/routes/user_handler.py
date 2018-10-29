@@ -42,6 +42,9 @@ def search_movie_info():
     elif 'genre' in request.args:
         genre = request.args.get('genre')
         res = search_by_movie_genre(genre)
+    
+    else:
+        return jsonify({"error":"missing arguments"})
 
     response = jsonify({"data": res})
     return response
