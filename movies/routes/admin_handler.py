@@ -1,6 +1,6 @@
 from flask import request, abort
 from flask.blueprints import Blueprint
-from flask_jwt import JWT, jwt_required
+from flask_jwt import jwt_required
 from movies.log import get_logger
 from movies.core.commons import jsonify
 from movies.core.data_operations import insert_new_movie, update_movie, delete_movie
