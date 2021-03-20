@@ -20,7 +20,7 @@ httplib2==0.10.3
 idna==2.6
 ipaddress==1.0.22
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 Mako==1.0.7
 MarkupSafe==1.0
 MySQL-python==1.2.5
